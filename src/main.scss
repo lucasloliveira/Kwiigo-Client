@@ -1,0 +1,41 @@
+@import "/libs/bootstrap/dist/css/bootstrap.min.css";
+@import "header/header";
+@import "body/body";
+@import url("http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext");
+
+html {
+  height: 100%;
+  /* Needed for hiding crollbars when pushing */
+  overflow-x: hidden;
+
+  body {
+    height: 100%;
+    background: #F0F0F0;
+
+    .index-div {
+      height: 100%;
+
+      .main {
+        height: 100%;
+      }
+    }
+
+    #loading-bar {
+      .bar {
+        background: #cb3f2e;
+      }
+    }
+  }
+
+
+  .loading {
+    text-align: center;
+    color: #cb3f2e;
+  }
+
+  .lato {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+}

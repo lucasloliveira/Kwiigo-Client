@@ -1,0 +1,98 @@
+@import "../variables.scss";
+
+.header {
+  background-color: rgba(255,255,255,.9);
+  border-color: #ececec;
+  height: 46px;
+
+  .user-actions {
+    float: right;
+
+    .create-location {
+      margin: 0 10px;
+      cursor: pointer;
+      font-family: Lato;
+      font-weight: 800;
+      font-size: 16px;
+      border: 1px solid black;
+      border-radius: 1px;
+      padding: 4px;
+    }
+
+    .profile-image {
+      width: 42px;
+      margin: 2px 0;
+    }
+  }
+
+  .menu {
+    display: block;
+    margin: 13px 0;
+    cursor: pointer;
+    font-size: 20px;
+    color: #4a4a4a;
+  }
+
+  .title {
+    margin: 10px 10px;
+    display: inline-block;
+    font-family: ArialRoundedMTBold;
+    font-size: 30px;
+    letter-spacing: -0.3px;
+    color: #cb3f2e;
+    line-height: 26px;
+
+    span {
+      cursor: pointer;
+      position: absolute;
+    }
+  }
+
+  .signin {
+    float: right;
+    font-family: Lato;
+    font-size: 18px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+
+  .search {
+    margin: 6px;
+    input, input:focus, .input-group-btn, .input-group-btn .btn {
+      outline: none;
+    }
+  }
+
+  .btn-facebook {
+    margin: 6px 0;
+    float: right;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+
+}
+
+@media (min-width: $screen-sm-min) {
+
+}
+
+@media (max-width: $screen-sm-max) {
+
+}
+
+@media (min-width: $screen-md-min) {
+
+  .header .title {
+    margin: 10px 0;  
+    text-align: initial;
+  }
+}
+
+@media (max-width: $screen-md-max) {
+
+}
+
+@media (min-width: $screen-lg-min) {
+
+}

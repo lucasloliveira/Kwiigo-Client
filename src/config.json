@@ -1,0 +1,12 @@
+{
+  "development": {
+    "ENV": {
+      "apiEndpoint": "http://localhost:3000"
+    }
+  },
+  "production": {
+    "ENV": {
+      "apiEndpoint": "http://kwiigo.herokuapp.com"
+    }
+  }
+}

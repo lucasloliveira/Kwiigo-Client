@@ -1,0 +1,38 @@
+{
+  "name": "travel",
+  "version": "0.0.0",
+  "devDependencies": {
+    "browser-sync": "^2.6.5",
+    "connect-modrewrite": "^0.8.1",
+    "gulp": "^3.8.11",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-angular-templatecache": "^1.6.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-debug": "^2.0.1",
+    "gulp-flatten": "0.0.4",
+    "gulp-if": "^1.2.5",
+    "gulp-image": "^1.0.4",
+    "gulp-inject": "^1.2.0",
+    "gulp-jshint": "^1.10.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-minify-html": "^1.0.2",
+    "gulp-ng-annotate": "^0.5.2",
+    "gulp-ng-constant": "^0.3.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.2.0",
+    "gulp-useref": "^1.1.2",
+    "gulp-util": "^3.0.5",
+    "jshint-stylish": "^1.0.1",
+    "run-sequence": "^1.1.0",
+    "wiredep": "^2.2.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}

@@ -1,0 +1,49 @@
+.angular-google-map-container {
+  height: 320px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.profile {
+
+  .user-details {
+    margin-top: 20px;
+
+    .avatar {
+      width: 40px;
+      display: inline;
+    }
+
+    .username {
+      margin-left: 10px;
+      font-size: 24px;
+      vertical-align: bottom;
+      font-weight: bold;
+      font-family: 'Lato';
+    }
+  }
+
+  .user-contributions {
+
+    margin-top: 20px;
+
+    .tips {
+
+      .tips-header {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      ul {
+        list-style: none;
+      }
+    }
+
+    .stats {
+      .stats-header {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -18,6 +18,7 @@
       'ui.bootstrap',
       'uiGmapgoogle-maps',
       'angular-loading-bar',
-      'ngTagsInput'
+      'google.places',
+      'ipCookie'
     ]);
 })();

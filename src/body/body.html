@@ -1,3 +1,26 @@
-<div class="body-header">
-  <h1>Something as a Header</h1>
+<div class="container-fluid" style="height: 100%;">
+  <div ng-show="logged">
+    <div class="search-box">
+      <input g-places-autocomplete force-selection="true"  ng-model="address" placeholder="Where to?" ng-enter="search(address)">
+    </div>
+    <div style="height: 100%;" ng-show="results || loading">
+      <i class="fa fa-spinner fa-pulse fa-3x" aria-hidden="true" ng-show="loading" style="color: white; text-align: center;
+    width: 100%; margin-top: 40px;"></i>
+      <div ng-show="results && results.length > 0">
+        <ul>
+          <li ng-repeat="item in results">
+            {{item.content}}
+          </li>
+        </ul>
+      </div>
+      <div ng-show="results && results.length == 0">
+        <h2>There are no tips for that location</h2>
+      </div>
+    </div>
+  </div>
+  <div class="home-signin" ng-hide="logged">
+
+    <h3 class="">Log in with Facebook</h3>
+
+  </div>
 </div>

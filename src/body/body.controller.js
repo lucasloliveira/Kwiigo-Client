@@ -12,21 +12,22 @@
     .controller('BodyCtrl', Body);
 
   // @ngInject
-  function Body($scope, $rootScope, $state, LocationService) {
+  function Body($scope, $http, $stateParams, TipService) {
 
-    list();
-
-    $scope.searchLocations = function(address) {
-      if(address) {
-        $state.go('search', {query: address.formatted_address});
-      }
-    };
-
-    function list() {
+    if($stateParams.search) {
       $scope.loading = true;
-      LocationService.list().then(function(response) {
+      $scope.search($stateParams.search);
+    }
+    
+    $scope.search = function(address) {
+      $scope.loading = true;
+      if(!address) return;
+      TipService.byaddress(address.formatted_address).then(function(response){
+        $scope.results = response.data;
         $scope.loading = false;
-        $scope.locations = response.data;
+      }, function(error){
+        console.log('shit happened: ' + error);
+        $scope.loading = false;
       });
     }
   }

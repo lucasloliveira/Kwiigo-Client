@@ -5,12 +5,12 @@
     "sugar": "~1.4.1",
     "angular": "1.4.5",
     "angular-ui-router": "~0.2.15",
-    "ng-token-auth": "~0.0.25",
+    "ng-token-auth": "~0.0.29",
     "font-awesome": "~4.3.0",
     "angular-permission": "~0.2.0",
     "angular-bootstrap": "^1.3.2",
     "bootstrap": "^3.3.6",
-    "angular-google-maps": "~2.2.0",
+    "angular-google-maps": "~2.3.4",
     "angular-loading-bar": "^0.9.0",
     "ng-s3upload": "^0.1.2",
     "angular-google-places-autocomplete": "^0.2.7"
@@ -20,5 +20,8 @@
       "main": "./release/sugar-full.min.js"
     }
   },
-  "appPath": "app"
+  "appPath": "app",
+  "resolutions": {
+    "angular": "1.5.8"
+  }
 }

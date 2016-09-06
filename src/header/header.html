@@ -1,14 +1,16 @@
-
 <div class="container-fluid">
   
-  <span class="title" ui-sref="home">Travel?</span>
+  <div class="col-md-12">
+    <span class="title" ui-sref="home">Kwiigo</span>
 
-  <button ng-hide="logged" class="btn btn-social btn-facebook visible-md visible-lg" ng-click="authenticate('facebook')">
-    <i class="fa fa-facebook"></i>
-    Login with facebook
-  </button>
+    <div class="user-actions hidden-xs hidden-sm" uib-dropdown ng-mouseover="status.isopen = true" is-open="status.isopen">
+      <img class="profile-image" uib-dropdown-toggle ng-src="{{user.image}}" ui-sref="profile({uid: user.uid})"/>
 
-  <div ng-show="logged" class="user-actions hidden-xs hidden-sm">
-    <img class="profile-image"  ng-src="{{user.image}}"/>
+      <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+        <li>
+          <a ng-click="signOut()">Sign out</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>

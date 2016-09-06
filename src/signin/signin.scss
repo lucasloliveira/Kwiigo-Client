@@ -1,0 +1,21 @@
+.home-signin {
+  text-align: center;
+
+  .btn-facebook {
+    color: #fff;
+    border-color: rgba(0,0,0,.2);
+    background-repeat: no-repeat;
+    background-position: 4px center;
+    background-color: #3b5998;
+
+    &:hover, &:focus {
+      color: #fff;
+      background-color: #2d4373;
+      border-color: rgba(0,0,0,.2);
+    }
+  }
+
+  .btn-social.btn-facebook {
+    text-align: center;
+  }
+}

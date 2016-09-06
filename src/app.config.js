@@ -14,7 +14,7 @@
     .config(Config);
 
   // @ngInject
-  function Config($locationProvider, $urlRouterProvider, $authProvider, cfpLoadingBarProvider, ENV) {
+  function Config($locationProvider, $urlRouterProvider, $authProvider, cfpLoadingBarProvider, uiGmapGoogleMapApiProvider, ENV) {
     $locationProvider.html5Mode({
       enabled: true,
       requireBase: false,
@@ -23,6 +23,11 @@
 
     $urlRouterProvider.otherwise('/');
     cfpLoadingBarProvider.includeSpinner = false;
+
+    uiGmapGoogleMapApiProvider.configure({
+      key: 'AIzaSyAYZUFNBcOl3OoBN0xT017b9FIPTEu5ozY'
+    });
+
 
     $authProvider.configure({
       apiUrl: ENV.apiEndpoint,

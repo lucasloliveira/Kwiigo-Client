@@ -3,16 +3,16 @@
 
   /**
    * @ngdoc function
-   * @name app.controller:HeaderCtrl
+   * @name app.controller:SigninCtrl
    * @description
-   * # HeaderCtrl
+   * # SigninCtrl
    * Controller of the app
    */
   angular.module('app')
-    .controller('HeaderCtrl', Header);
+    .controller('SigninCtrl', Signin);
 
   // @ngInject
-  function Header() {
+  function Signin() {
   }
 
 })();

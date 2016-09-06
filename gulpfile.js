@@ -150,6 +150,7 @@ gulp.task('build:prod', function(callback){
 gulp.task('serve', ['build:dev'], function(){
   browserSync.init({
     host: 'localhost',
+    notify: false,
     port: 8000,
     server: {
       baseDir: [app.build.root],

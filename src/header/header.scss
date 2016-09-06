@@ -8,29 +8,19 @@
   .user-actions {
     float: right;
 
-    .create-location {
-      margin: 0 10px;
-      cursor: pointer;
-      font-family: Lato;
-      font-weight: 800;
-      font-size: 16px;
-      border: 1px solid black;
-      border-radius: 1px;
-      padding: 4px;
-    }
-
     .profile-image {
       width: 42px;
       margin: 2px 0;
+      cursor: pointer;
     }
-  }
 
-  .menu {
-    display: block;
-    margin: 13px 0;
-    cursor: pointer;
-    font-size: 20px;
-    color: #4a4a4a;
+    .dropdown-menu {
+      left:auto;
+      right: 0;
+      > li > a {
+        cursor: pointer;
+      }
+    }
   }
 
   .title {
@@ -41,6 +31,7 @@
     letter-spacing: -0.3px;
     color: #cb3f2e;
     line-height: 26px;
+    cursor: pointer;
 
     span {
       cursor: pointer;
@@ -54,13 +45,6 @@
     font-size: 18px;
     margin: 10px 0;
     cursor: pointer;
-  }
-
-  .search {
-    margin: 6px;
-    input, input:focus, .input-group-btn, .input-group-btn .btn {
-      outline: none;
-    }
   }
 
   .btn-facebook {

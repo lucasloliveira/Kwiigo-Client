@@ -1,0 +1,32 @@
+<div class="container-fluid profile">
+
+  <div class="col-md-12">
+    <div class="user-details">
+      <img ng-src="{{user.image}}" class="avatar img-circle">
+      <span class="username">{{user.name}}</span>
+    </div>
+  </div>
+
+  <div class="col-md-12">
+    <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+      <ui-gmap-markers models="markers" coords="'coords'" idKey="'id'">
+      </ui-gmap-markers>
+    </ui-gmap-google-map>
+  </div>
+
+  <div class="user-contributions col-md-12">
+    <div class="tips col-md-6">
+      <span class="tips-header">Tips</span>
+
+      <ul>
+        <li ng-repeat="tip in user.tips">
+          {{tip.content}}
+          <address>{{tip.address}}</address>
+        </li>
+      </ul>
+    </div>
+    <div class="stats col-md-6">
+      <span class="stats-header">Statistics</span>
+    </div>
+  </div>
+</div>

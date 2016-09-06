@@ -13,7 +13,7 @@
     .controller('HomeCtrl', Home);
 
   // @ngInject
-  function Home($scope, cfpLoadingBar) {
+  function Home(cfpLoadingBar) {
 
     cfpLoadingBar.start();
   }

@@ -3,17 +3,21 @@
     <div class="search-box">
       <input g-places-autocomplete force-selection="true"  ng-model="address" placeholder="Where to?" ng-enter="search(address)">
     </div>
-    <div style="height: 100%;" ng-show="results || loading">
+    <div style="height: 100%;" ng-show="tipsByUser || loading">
       <i class="fa fa-spinner fa-pulse fa-3x" aria-hidden="true" ng-show="loading" style="color: white; text-align: center;
     width: 100%; margin-top: 40px;"></i>
-      <div ng-show="results && results.length > 0">
+      <div ng-show="tipsByUser && tipsByUser.length > 0">
         <ul>
-          <li ng-repeat="item in results">
-            {{item.content}}
+          <li ng-repeat="userAndTip in tipsByUser">
+            {{userAndTip[0].name}}
+            Tips:
+            <div ng-repeat="tip in userAndTip[1]">
+              {{tip.content}}
+            </div>
           </li>
         </ul>
       </div>
-      <div ng-show="results && results.length == 0">
+      <div ng-show="tipsByUser && tipsByUser.length == 0">
         <h2>There are no tips for that location</h2>
       </div>
     </div>

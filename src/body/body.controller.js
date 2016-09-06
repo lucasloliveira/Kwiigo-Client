@@ -20,13 +20,14 @@
     }
     
     $scope.search = function(address) {
-      $scope.loading = true;
       if(!address) return;
+      $scope.loading = true;
+      // $scope.tipsByUser = undefined;
       TipService.byaddress(address.formatted_address).then(function(response){
-        $scope.results = response.data;
+        $scope.tipsByUser = _.chain(response.data).groupBy('user.id').toPairs().map(function(array){array[0] = array[1][0]['user']; return array;}).value();
         $scope.loading = false;
       }, function(error){
-        console.log('shit happened: ' + error);
+        $scope.tipsByUser = undefined;
         $scope.loading = false;
       });
     }
